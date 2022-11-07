@@ -1,38 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  background-image: url("./busy-market.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+  background: rgb(106, 48, 48);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.itemsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.items {
+  border: 2px solid black;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(222, 156, 69, 0.789);
+}
+
+.text {
+  text-decoration: none;
+  color: black;
+  
+
+}
+
+.title {
+  color: rgb(46, 38, 27);
+  border: solid black;
+  background: tan;
+  font-size: 5vh;
+  text-decoration: underline;
+
 }
