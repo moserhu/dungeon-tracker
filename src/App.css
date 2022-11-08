@@ -1,5 +1,7 @@
+/* Boiler Plate */
 * {
   box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 html, body {
@@ -17,7 +19,7 @@ body {
   text-align: center;
 }
 
-
+/* Utilities --------------------------------------------------------*/
 
 nav {
   display: flex;
@@ -41,10 +43,15 @@ nav {
   text-decoration: none;
 }
 
+
+/* UI Decorations --------------------------------------------- */
+
+
 .itemsContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  padding-inline: 2rem;
   grid-auto-rows: minmax(100px, auto);
 }
 
@@ -57,18 +64,23 @@ nav {
   background-color: rgba(222, 156, 69, 0.789);
 }
 
-.text {
+.itemNames {
   text-decoration: none;
   color: black;
-  
-
 }
 
 .title {
   color: rgb(46, 38, 27);
   border: solid black;
+  padding: 2%;
   background: tan;
   font-size: 5vh;
   text-decoration: underline;
+}
 
+.text {
+  font-size: 2rem;
+  border: 2px solid black;
+  padding-block: 15%;
+  background-color: rgba(222, 156, 69, 0.789);
 }

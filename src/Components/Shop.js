@@ -26,7 +26,7 @@ function Shop() {
             <div className='itemsContainer'>
                 {items.map(item => (
                     <h1 className='items' key={item.url}>
-                        <Link className='text' to={`/shop${item.url}`}>{item.name}</Link>
+                        <Link className='itemNames' to={`/shop${item.url}`}>{item.name}</Link>
                     </h1>
                 ))}
             </div>

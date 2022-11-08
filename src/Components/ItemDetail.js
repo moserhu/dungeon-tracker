@@ -26,7 +26,7 @@ function ItemDetail() {
             <h1 className='title'>
                 {item.name}
             </h1>
-            <div className='items'>
+            <div className='text'>
                {item.desc}
             </div>
         </div>
